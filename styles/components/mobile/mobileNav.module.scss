@@ -1,0 +1,277 @@
+.mobile_nav_wrapper {
+  //min-height: 134px;
+  background: #F25A2B;
+  padding: 14px 24px 10px 24px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.nav_content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left_side {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+
+    button {
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.counter_menu_item {
+  a {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 16px;
+      height: 16px;
+      background-color: #F25A2B;
+      border-radius: 50%;
+      color: #FFFFFF;
+      font-size: 7px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.right_sie {
+  position: absolute;
+  right: 45%;
+  //.counter_menu {
+  //  display: flex;
+  //  gap: 10px;
+  //  align-items: center;
+  //}
+}
+
+.nav_searchbar_wrapper {
+  margin-top: 12px;
+}
+
+.offcanvas_header {
+  height: 86px;
+  background: #F25A2B;
+  padding: 25px;
+
+  .offcanvas_header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.offcanvas_body {
+  margin-top: 172px;
+
+  .offcanvas_pre_order_button {
+    max-width: 260px;
+    margin: 32px auto;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #FFF5F6;
+      border: 1px solid #F2F2F2;
+      border-radius: 100px;
+      padding: 12px;
+
+      .pre_text {
+        font-weight: 500;
+        font-size: 15px;
+        display: block;
+        color: #242424;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 12px;
+        color: #6B6B6B;
+      }
+    }
+  }
+}
+
+.offcanvas_menu {
+  ul {
+    li {
+      //margin-bottom: 24px;
+      &:last-child {
+        //margin-bottom: 30px;
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 15px;
+        color: #242424;
+        display: block;
+        padding: 12px 20px;
+      }
+    }
+  }
+}
+
+.nav_title {
+  background: #F7F7F7;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  color: rgba(36, 36, 36, 0.5);
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.offcanvas_footer_menu {
+  padding: 0 20px;
+  margin-top: 30px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+
+    }
+  }
+}
+
+.button_wrapper {
+  width: 260px;
+  margin: 30px auto;
+
+  button {
+    height: 48px;
+    width: 100%;
+    background: #F25A2B;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+
+    img {
+      margin-right: 10px;
+    }
+
+  }
+}
+
+.login_btn {
+  a {
+    background: #FFF5F6;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    width: 131px;
+    height: 42px;
+    color: #F25A2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 13px;
+
+    span {
+      margin-left: 12px;
+    }
+  }
+}
+
+.main_cursor_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.expand_icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown_parent_wrapper {
+  position: relative;
+
+  .dropdown_wrapper {
+    transition: 0.3s;
+  }
+}
+
+.active_nav_parent {
+  .active_parent_icon_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FDF3F0;
+    padding-right: 20px;
+  }
+
+  .active_parent_menu {
+    color: #F25A2B;
+  }
+}
+
+.expand_menu_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sub_dropdown_item {
+  background: #F7F7F7;
+
+  li {
+    border-bottom: 1px solid #F2F2F2;
+
+    a {
+      color: #636363 !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+.active_sub_dropdown_item {
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+  //background: #FDF3F0;
+  //padding-right: 20px;
+}
+
+.active_sub_dropdown_item_menu {
+  display: block;
+}
+
+.active_sub_dropdown_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FDF3F0;
+  padding-right: 20px;
+}
+
+.sub_dropdown_icon {
+  width: 20px;
+  height: 20px;
+}

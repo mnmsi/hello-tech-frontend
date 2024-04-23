@@ -1,0 +1,25 @@
+@import "../scss/responsive";
+
+.product_wrapper {
+  margin-top: 150px;
+  @include responsive('tablet') {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #242424;
+    @include responsive('tablet') {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

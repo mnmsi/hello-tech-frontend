@@ -1,0 +1,32 @@
+@import "../scss/responsive";
+.slider_wrapper {
+
+}
+
+.product_review_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .arrow_wrapper {
+    @include responsive('tablet') {
+      display: none;
+    }
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    img{
+      cursor: pointer;
+    }
+  }
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  @include responsive('tablet'){
+    margin-top: 30px;
+  }
+}

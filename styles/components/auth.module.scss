@@ -1,0 +1,53 @@
+@import "../scss/responsive";
+.form_wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  //input {
+  //  margin-bottom: 24px;
+  //}
+}
+.auth_text_wrapper {
+  margin-top: 24px;
+  text-align: center;
+  color: #242424;
+  @include responsive('tablet') {
+    font-size: 13px;
+  }
+  a {
+    color: #f25a2b;
+    text-decoration: underline !important;
+    font-weight: 500;
+  }
+  span {
+    @extend a;
+  }
+}
+
+
+
+.otp_wrapper {
+  position: relative;
+  button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background-color: #f25a2b;
+    border: none;
+    color: #fff;
+    width: 136px;
+    height: 52px;
+    border-radius: 100px;
+    font-size: 14px;
+    @include responsive('tablet') {
+      width: 100px;
+      height: 40px;
+      font-size: 12px;
+      top: 5px;
+    }
+    &:disabled {
+      background-color: #f25a2b;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

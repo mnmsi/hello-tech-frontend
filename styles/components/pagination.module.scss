@@ -1,0 +1,65 @@
+@import "../scss/responsive";
+.pagination-wrapper {
+  @include responsive('tablet') {
+    overflow-x: auto;
+    //hide scrollbar
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .pagination {
+    li {
+      margin-right: 10px;
+
+      &.active {
+        a {
+          background: red;
+          color: #fff;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        border: 1px solid ;
+        font-weight: 700;
+        font-size: 16px;
+        color: red;
+        @include responsive('tablet') {
+          height: 32px;
+          width: 32px;
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+
+      &.disabled {
+        a {
+          background: #fff;
+          color: red;
+          border: 1px solid red;
+        }
+      }
+
+      &:last-child {
+        a {
+          border-radius: 50%;
+        }
+      }
+
+      &:first-child {
+        a {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

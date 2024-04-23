@@ -1,0 +1,14 @@
+@import "../scss/responsive";
+.social_auth_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  button {
+    border: none;
+    background: none;
+    margin-top: 25px;
+    @include responsive('tablet') {
+      margin-top: 15px;
+    }
+  }
+}

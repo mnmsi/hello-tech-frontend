@@ -1,0 +1,117 @@
+@import "../scss/responsive";
+
+.add_address_wrapper {
+  background: #FAFAFA;
+  padding: 24px 12px;
+
+  .content_wrapper {
+    background: #FFFFFF;
+
+    .section_header {
+      padding: 16px;
+      border-bottom: 1px solid #F2F2F2;
+      margin-bottom: 24px;
+
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+        color: #242424;
+        margin-bottom: 0;
+        @include responsive('tablet') {
+          font-size: 16px;
+          color: #F25A2B;
+        }
+      }
+    }
+  }
+
+  .form_wrapper {
+    padding: 0 16px 50px 16px;
+
+    .form_group {
+      margin-bottom: 20px;
+
+      .label {
+        font-weight: 500;
+        font-size: 15px;
+        color: #242424;
+        margin-bottom: 12px;
+        @include responsive('tablet') {
+          font-size: 12px;
+        }
+      }
+
+      .radio_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .radio_item {
+          background: #FFF9F9;
+          border: 1px solid #F2F2F2;
+          //border-radius: 2px;
+          width: 107px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 400;
+          font-size: 15px;
+          @include responsive('tablet') {
+            width: 94px;
+            height: 36px;
+            margin-bottom: 24px;
+          }
+
+          label {
+            color: #B5B5B5;
+            @include responsive('tablet') {
+              font-size: 12px;
+            }
+          }
+
+          cursor: pointer;
+
+          &.active {
+            label {
+              color: #F25A2B;
+            }
+
+            border: 1px solid rgba(242, 90, 43, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.save_as_wrapper {
+  max-width: 380px;
+
+  .radio_wrapper {
+    justify-content: space-between;
+  }
+}
+
+.button_wrapper {
+  margin-top: 52px;
+
+  button {
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid rgba(242, 90, 43, 0.12);
+    color: #F25A2B;
+    text-transform: uppercase;
+  }
+
+  button[type='submit'] {
+    background: #F25A2B;
+    color: #fff;
+    //font-size: 15px;
+    //border: 1px solid rgba(242, 90, 43, 0.12);
+    text-transform: uppercase;
+  }
+}

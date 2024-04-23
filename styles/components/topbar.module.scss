@@ -1,0 +1,33 @@
+/*** topbar ***/
+@import "../scss/mixin";
+@import "../scss/colors";
+
+.topbar_wrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  .nav_content_wrapper {
+    @include flexBetween();
+
+    .social_icon {
+      ul {
+        @include flexBetween(20px)
+      }
+    }
+
+    .contact_info {
+      ul {
+        @include flexBetween(20px);
+
+        li {
+          a {
+            @include flexBetween(10px);
+            color: $text-primary;
+          }
+        }
+      }
+    }
+  }
+}
+

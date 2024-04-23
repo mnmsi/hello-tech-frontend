@@ -1,0 +1,124 @@
+@import "../scss/responsive";
+.customer_reviews {
+  padding: 50px;
+  border: 1px solid #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  @include responsive('tablet') {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer_reviews_header {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    @include responsive('tablet') {
+     justify-content: center;
+      margin-bottom: 0;
+    }
+
+    span {
+      color: rgba(36, 36, 36, 0.7);
+      font-size: 18px;
+      font-weight: 900;
+    }
+  }
+
+  .customer_reviews_body {
+    h1 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+      //margin-bottom: 16px;
+      color: #242424;
+      @include responsive('tablet') {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .customer_reviews_footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include responsive('tablet') {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      color: rgba(36, 36, 36, 0.7);
+      @include responsive('tablet') {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.button_wrapper {
+  button {
+    background: #FFF5F6;
+    border: 1px solid rgba(242, 90, 43, 0.12);
+    border-radius: 3px;
+    width: 200px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #F25A2B;
+    font-size: 12px;
+    @include responsive('tablet') {
+     font-size: 10px;
+    }
+  }
+}
+
+.review_list_card {
+  margin-bottom: 50px;
+  padding: 50px;
+  border: 1px solid #F2F2F2;
+  @include responsive('tablet') {
+    padding: 20px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #242424;
+    @include responsive('tablet') {
+      font-size: 16px;
+    }
+  }
+
+  .review {
+    margin-bottom: 10px;
+
+  }
+  .date{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(36, 36, 36, 0.5);
+    margin-bottom: 14px;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+  }
+  .content{
+    color: rgba(36, 36, 36, 0.9);
+    font-size: 16px;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+  }
+}

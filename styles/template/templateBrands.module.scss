@@ -1,0 +1,83 @@
+@import "../scss/responsive";
+
+.category_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 16px;
+  @include responsive('tablet') {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    gap: 7px;
+
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .button_wrapper {
+    @include responsive('tablet') {
+      flex: none;
+    }
+
+    &.active {
+      button {
+
+        background: #F25A2B;
+        color: #FFFFFF;
+      }
+    }
+
+    button {
+
+      background: #FFFFFF;
+      border: 2px solid rgba(242, 90, 43, 0.5);
+      border-radius: 100px;
+      padding: 16px 48px;
+      font-size: 14px;
+      @include responsive('tablet') {
+        padding: 12px 24px;
+        font-weight: 500;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+  @include responsive('tablet') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-top: 30px;
+  }
+}
+
+.title_wrapper {
+  margin-top: 50px;
+  @include responsive('tablet') {
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    @include responsive('tablet') {
+      font-size: 16px;
+    }
+  }
+}
+
+.see_all_button_wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  @include responsive('tablet') {
+    margin-top: 30px;
+  }
+}

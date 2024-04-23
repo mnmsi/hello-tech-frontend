@@ -1,0 +1,27 @@
+@mixin flexBetween($gap: 0) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flexCenter($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flexStart($gap: 0) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flexEnd($gap: 0) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $gap;
+}

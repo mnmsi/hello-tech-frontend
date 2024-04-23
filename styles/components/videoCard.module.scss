@@ -1,0 +1,61 @@
+@import "../scss/responsive";
+
+.video_card_wrapper {
+  //max-width: 320px;
+  //margin: 0 auto;
+  //height: 400px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 24px;
+
+}
+
+.video_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .video_card_thumbnail {
+    img {
+      border-radius: 10px;
+      //padding-left:24px;
+    }
+
+  }
+
+  .play_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video_card_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @include responsive('tablet') {
+      font-weight: 400;
+      font-size: 12px;
+      display: -webkit-box;
+      text-align: center;
+      line-break: anywhere;
+      width: 100%;
+    }
+  }
+}
+
+.plyer_wrapper{
+  height: 280px;
+  width: 100%;
+  @include responsive('tablet') {
+    height: 200px;
+  }
+}
+

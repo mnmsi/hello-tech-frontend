@@ -1,0 +1,39 @@
+@import "../../styles/scss/responsive";
+
+.bread_crumb_wrapper {
+  margin-bottom: 20px;
+  a {
+    color: #202020;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+
+    img {
+      margin-right: 10px;
+      @include responsive('tablet') {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .arrow {
+    margin: 0 10px;
+    @include responsive('tablet') {
+      margin: 0 5px;
+    }
+    color: #B1B1B1;
+  }
+}
+
+.productName {
+  font-size: 14px;
+  color: #706D6E;
+    @include responsive('tablet') {
+        font-size: 12px;
+    }
+}

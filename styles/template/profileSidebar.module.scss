@@ -1,0 +1,55 @@
+@import "../scss/responsive";
+.sidebar_wrapper {
+  background-color: #FFFFFF;
+  padding: 16px;
+  min-height: 100vh;
+  @include responsive('tablet') {
+    min-height: 100%;
+  }
+
+  ul {
+    li {
+      border-bottom: 1px solid #F2F2F2;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        height: 56px;
+        width: 100%;
+        &.active {
+          span {
+            color: #F25A2B;
+          }
+
+          img {
+            filter: invert(42%) sepia(99%) saturate(1827%) hue-rotate(343deg) brightness(97%) contrast(96%);
+          }
+        }
+
+        &:hover {
+          span {
+            color: #F25A2B;
+          }
+
+          img {
+            filter: invert(42%) sepia(99%) saturate(1827%) hue-rotate(343deg) brightness(97%) contrast(96%);
+          }
+        }
+
+        span {
+          color: #636363;
+          font-weight: 500;
+          font-size: 16px;
+          @include responsive('tablet') {
+            font-size: 14px;
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../scss/responsive";
+
+.input_wrapper {
+  label {
+    font-style: normal;
+    font-weight: 500;
+    color: #242424;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid #E8E8E8;
+    padding: 14px 16px;
+    color: #6B6B6B;
+    font-weight: 400;
+    font-size: 13px;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.input_error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

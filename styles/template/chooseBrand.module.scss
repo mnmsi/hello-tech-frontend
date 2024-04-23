@@ -1,0 +1,16 @@
+@import "../scss/responsive";
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  @include responsive('tablet') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}

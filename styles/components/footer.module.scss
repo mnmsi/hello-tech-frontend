@@ -1,0 +1,98 @@
+@import "../scss/mixin";
+@import "../scss/colors";
+@import "../scss/responsive";
+
+.footer_wrapper {
+  display: block;
+  @include responsive('tablet') {
+    display: none;
+  }
+  background: #F7F7F7;
+  border-top: 1px solid rgba(242, 90, 43, 0.2);
+  padding: 70px 0;
+  margin-top: 200px;
+  @include responsive('tablet') {
+    margin-top: 100px;
+    padding: 50px 0;
+  }
+}
+
+.bottom_footer_wrapper {
+  background: $bg-primary;
+  height: 56px;
+  @include flexCenter();
+  text-align: center;
+
+  p {
+    color: #FFFFFF;
+    @include responsive('tablet') {
+      font-size: 12px;
+    }
+  }
+}
+
+.footer_menu {
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 20px;
+    @include responsive('tablet') {
+      font-size: 15px;
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 16px;
+
+      a {
+        color: $text-secondary;
+        font-size: 16px;
+        font-weight: 500;
+        @include responsive('tablet') {
+          font-size: 15px;
+        }
+
+        &:hover {
+          color: $text-primary;
+        }
+      }
+    }
+  }
+}
+
+.address {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-secondary;
+  margin-bottom: 16px;
+  @include responsive('tablet') {
+    font-size: 15px;
+  }
+}
+
+.contact_info {
+  ul {
+    @include flexBetween(20px);
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    @include responsive('tablet') {
+      margin-bottom: 56px;
+    }
+
+    li {
+      a {
+        @include flexBetween(10px);
+        color: $text-secondary;
+        font-weight: 500;
+        @include responsive('tablet') {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+

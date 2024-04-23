@@ -1,0 +1,142 @@
+@import "../scss/responsive";
+.login_banner {
+  padding: 50px;
+  @include responsive('tablet') {
+    padding: 0;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #f25a2b;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+    @include responsive('tablet') {
+      font-size: 24px;
+      align-items: center;
+    }
+  }
+}
+
+.tab_wrapper {
+  margin-top: 24px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  .tab {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    color: #636363;
+    cursor: pointer;
+    @include responsive('tablet') {
+      font-size: 16px;
+    }
+
+    &.active {
+      color: #f25a2b;
+      pointer-events: none;
+      font-weight: 700;
+
+      &:after {
+        position: absolute;
+        width: 100%;
+        content: ' ';
+        height: 4px;
+        background: #f25a2b;
+        bottom: -14px;
+        left: 0;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.reset_password_wrapper {
+  margin: 100px auto 0 auto;
+  @include responsive('tablet') {
+    margin: 50px auto 0 auto;
+  }
+  text-align: center;
+  .reset_password_content_header {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 32px;
+
+    h1 {
+      color: #F25A2B;
+      font-weight: 700;
+      font-size: 32px;
+      margin-top: 24px;
+      @include responsive('tablet') {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .reset_password_content_wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    @include responsive('tablet') {
+      max-width: 100%;
+    }
+
+    p {
+      color: #909090;
+      @include responsive('tablet') {
+        font-size: 13px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.forget_password_input_wrapper {
+  text-align: left;
+  label {
+    font-weight: 500;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    color: #242424;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    @include responsive('tablet') {
+      //display: none;
+      margin-top: 32px;
+      font-size: 13px;
+    }
+  }
+
+  input {
+    //margin-bottom: 2rem;
+    @include responsive('tablet') {
+      //margin-bottom: 1rem;
+    }
+  }
+}
+
+.resend_otp {
+  margin-top: 16px;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #242424;
+
+    span {
+      font-weight: 700;
+      color: #F25A2B;
+      cursor: pointer;
+    }
+  }
+}
